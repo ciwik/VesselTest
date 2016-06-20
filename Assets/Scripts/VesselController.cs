@@ -46,7 +46,7 @@ public class VesselController : MonoBehaviour
 
     public void ChangeCompression(float newCompressionRatio)
     {
-        if (newCompressionRatio - compressionRatio < 5f)
+        if (newCompressionRatio - compressionRatio <= 5f)
         {
             compressionRatio = newCompressionRatio;
             ChangeCollider();
